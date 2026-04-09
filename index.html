@@ -324,6 +324,13 @@
     footer  { animation: fadeUp 0.5s 0.26s ease both; }
 
     /* ── Responsive ── */
+    .section-desc {
+      font-size: 13px;
+      color: var(--ink-light);
+      margin: -18px 0 20px;
+      line-height: 1.6;
+    }
+
     @media (max-width: 600px) {
       header { padding: 48px 20px 40px; }
       main   { padding: 0 20px 60px; }
@@ -347,14 +354,98 @@
 
 <main>
 
+  <!-- ── Beginner section ── -->
   <div class="section-label">
-    <span>Available guides</span>
-    <span class="count-pill">5 guides</span>
+    <span>Beginner projects</span>
+    <span class="count-pill">3 guides</span>
   </div>
+  <div class="section-desc">Start here. No coding required — these guides are thinking exercises and setup tasks any digital marketer can complete.</div>
 
   <div class="projects">
 
-    <!-- ── Project 1 ── -->
+    <a class="project" href="LLM_SEO_Setup_Guide.pdf" target="_blank">
+      <div>
+        <div class="project-meta">
+          <span class="project-tag">SEO</span>
+          <span class="project-num">01</span>
+        </div>
+        <div class="project-title">Make Your Website Visible to AI Search</div>
+        <div class="project-desc">
+          Set up llms.txt, update robots.txt, verify in Bing Webmaster Tools, and install 
+          structured data so ChatGPT, Perplexity, and Google AI can find and cite your brand.
+        </div>
+      </div>
+      <div class="pdf-col">
+                <div class="pdf-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+          </svg>
+          PDF
+        </div>
+        <div class="arrow">↗</div>
+      </div>
+    </a>
+
+    <a class="project" href="Build_Your_Brand_Markdown_File.pdf" target="_blank">
+      <div>
+        <div class="project-meta">
+          <span class="project-tag content">Brand</span>
+          <span class="project-num">02</span>
+        </div>
+        <div class="project-title">Build Your Brand Markdown File for Claude</div>
+        <div class="project-desc">
+          Create a brand playbook that loads into every Claude session — voice, tone, 
+          audience, products, and messaging rules so Claude writes on-brand every time.
+        </div>
+      </div>
+      <div class="pdf-col">
+                <div class="pdf-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+          </svg>
+          PDF
+        </div>
+        <div class="arrow">↗</div>
+      </div>
+    </a>
+
+    <a class="project" href="Build_Your_Brand_Personas_with_Claude.pdf" target="_blank">
+      <div>
+        <div class="project-meta">
+          <span class="project-tag">Strategy</span>
+          <span class="project-num">03</span>
+        </div>
+        <div class="project-title">Build Your Brand Personas with Claude</div>
+        <div class="project-desc">
+          Turn Shopify data, customer reviews, surveys, and Klaviyo into five 
+          living personas — built in an afternoon, refreshed quarterly, grounded in real data.
+        </div>
+      </div>
+      <div class="pdf-col">
+                <div class="pdf-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+          </svg>
+          PDF
+        </div>
+        <div class="arrow">↗</div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- ── Advanced section ── -->
+  <div class="section-label" style="margin-top: 48px;">
+    <span>Advanced projects</span>
+    <span class="count-pill">2 guides</span>
+  </div>
+  <div class="section-desc">These involve code, APIs, and developer setup. Claude handles the building — you handle the configuration.</div>
+
+  <div class="projects">
+
     <a class="project" href="How_To_Build_Your_Own_Asset_Manager.pdf" target="_blank">
       <div>
         <div class="project-meta">
@@ -368,7 +459,7 @@
         </div>
       </div>
       <div class="pdf-col">
-        <div class="pdf-badge">
+                <div class="pdf-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
             <polyline points="14 2 14 8 20 8"/>
@@ -379,37 +470,11 @@
       </div>
     </a>
 
-    <!-- ── Project 2 ── -->
-    <a class="project" href="LLM_SEO_Setup_Guide.pdf" target="_blank">
-      <div>
-        <div class="project-meta">
-          <span class="project-tag">SEO</span>
-          <span class="project-num">02</span>
-        </div>
-        <div class="project-title">Make Your Website Visible to AI Search</div>
-        <div class="project-desc">
-          Set up llms.txt, update robots.txt, verify in Bing Webmaster Tools, and install 
-          structured data so ChatGPT, Perplexity, and Google AI can find and cite your brand.
-        </div>
-      </div>
-      <div class="pdf-col">
-        <div class="pdf-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-          </svg>
-          PDF
-        </div>
-        <div class="arrow">↗</div>
-      </div>
-    </a>
-
-    <!-- ── Project 3 ── -->
     <a class="project" href="Build_Your_Marketing_Dashboard.pdf" target="_blank">
       <div>
         <div class="project-meta">
           <span class="project-tag data">Analytics</span>
-          <span class="project-num">03</span>
+          <span class="project-num">02</span>
         </div>
         <div class="project-title">Build Your Own Marketing Dashboard</div>
         <div class="project-desc">
@@ -418,7 +483,7 @@
         </div>
       </div>
       <div class="pdf-col">
-        <div class="pdf-badge">
+                <div class="pdf-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
             <polyline points="14 2 14 8 20 8"/>
@@ -429,62 +494,12 @@
       </div>
     </a>
 
-    <!-- ── Project 4 ── -->
-    <a class="project" href="Build_Your_Brand_Markdown_File.pdf" target="_blank">
-      <div>
-        <div class="project-meta">
-          <span class="project-tag content">Brand</span>
-          <span class="project-num">04</span>
-        </div>
-        <div class="project-title">Build Your Brand Markdown File for Claude</div>
-        <div class="project-desc">
-          Create a brand playbook that loads into every Claude session — voice, tone, 
-          audience, products, and messaging rules so Claude writes on-brand every time.
-        </div>
-      </div>
-      <div class="pdf-col">
-        <div class="pdf-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-          </svg>
-          PDF
-        </div>
-        <div class="arrow">↗</div>
-      </div>
-    </a>
-
-    <!-- ── Project 5 ── -->
-    <a class="project" href="Build_Your_Brand_Personas_with_Claude.pdf" target="_blank">
-      <div>
-        <div class="project-meta">
-          <span class="project-tag">Strategy</span>
-          <span class="project-num">05</span>
-        </div>
-        <div class="project-title">Build Your Brand Personas with Claude</div>
-        <div class="project-desc">
-          Turn Shopify data, customer reviews, surveys, and Klaviyo into five 
-          living personas — built in an afternoon, refreshed quarterly, grounded in real data.
-        </div>
-      </div>
-      <div class="pdf-col">
-        <div class="pdf-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-          </svg>
-          PDF
-        </div>
-        <div class="arrow">↗</div>
-      </div>
-    </a>
-
-    <!-- ── Coming soon placeholders ── -->
+    <!-- ── Coming soon ── -->
     <div class="project coming-soon">
       <div>
         <div class="project-meta">
           <span class="coming-tag">Coming soon</span>
-          <span class="project-num">06</span>
+          <span class="project-num">03</span>
         </div>
         <div class="project-title">More projects on the way</div>
         <div class="project-desc">New Claude AI project guides added regularly.</div>
